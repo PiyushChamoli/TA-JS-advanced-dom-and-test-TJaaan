@@ -53,18 +53,28 @@ table {
 
 body{
     text-align: center;
+    background-color: #0072ff;
 }
 
 h1{
     font-size: 50px;
     padding: 60px 0;
+    color: white;
 }
 
 .input{
+    outline: none;
   font-size: 24px;
   padding: 15px 30px;
   margin-bottom: 20px;
+  background-color: #0072ff;
+  color: white;
+  border: 2px solid white;
 } 
+
+.input::placeholder {
+    color: white;
+}
 
 .adder{
     position: relative;
@@ -73,9 +83,11 @@ h1{
 
 span{
     position: absolute;
-    font-size: 24px;
+    font-size: 27px;
+    font-weight: 600;
     top:20px;
-    margin-left: -20px;
+    margin-left: -30px;
+    color: white;
 }
 
 span:hover{
@@ -90,10 +102,15 @@ ul{
 }
 
 li{
-    border: 2px solid black;
-    padding: 20px 70px;
+    padding: 17px 60px;
     width: 20%;
-    margin-bottom: 10px;
-    font-size: 24px;
-    background-color: burlywood;   
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: white;
+    color: #0072ff;   
 }
+
+.over {
+    transform: scale(1.1, 1.1);
+  }
